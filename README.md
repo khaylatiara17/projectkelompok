@@ -1,4 +1,4 @@
-# Company Profile Website - Fintech Project
+# Company Profile Website - Fintech Project (Referensi https://karuniamultifinance.com/)
 
 ## 📌 Informasi Kelompok
 
