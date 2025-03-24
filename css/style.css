@@ -1,0 +1,246 @@
+/* Variables */
+:root {
+    --primary-color: #D4AF37;
+    --secondary-color: #0056b3;
+    --text-light: #fff;
+    --text-dark: #000;
+    --header-height: 100px;
+    --spacing: 20px;
+}
+
+/* Base Layout */
+body {
+    font-family: Arial, sans-serif;
+    padding-top: var(--header-height);
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing);
+}
+
+/* Custom styling */
+body {
+    padding-top: 110px !important; /* Ensure content clears fixed header */
+}
+
+.main-content, .container {
+    padding-top: 20px; /* Additional spacing for content */
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 100px !important; /* Adjusted for mobile */
+    }
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: var(--text-light);
+}
+
+.top-bar {
+    background: var(--primary-color);
+    height: 40px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    height: 60px;
+    padding: 5px 15px;
+    background: var(--text-light);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navigation */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Components */
+.contact-btn {
+    background: var(--secondary-color);
+    color: var(--text-light);
+    padding: 8px 12px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* Carousel styling */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-indicators {
+    margin-bottom: 2rem;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+/* Updated Responsive Carousel styling */
+.carousel-custom {
+    margin-top: -20px; /* Offset the container padding for full-width carousel */
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+}
+
+.carousel-image-container {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+    object-position: center;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+@media (max-width: 768px) {
+    .carousel-image-container {
+        max-height: 60vh;
+    }
+    
+    .carousel-image-container img {
+        max-height: 60vh;
+    }
+}
+
+/* Improve carousel controls visibility */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%;
+    opacity: 0.8;
+    background: rgba(245, 244, 244, 0.5);
+}
+
+.carousel-indicators {
+    z-index: 15;
+    bottom: 0;
+    margin-bottom: 1rem;
+}
+
+/* Company Title Logo */
+.company-title {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.title-logo {
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .title-logo {
+        max-width: 280px;
+    }
+}
+
+/* Header and Content Spacing */
+.main-content {
+    position: relative;
+    z-index: 1;
+    padding-top: 20px;
+}
+
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.header {
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    will-change: transform;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* Optimize performance with commonly used styles */
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main Content Spacing */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-unit);
+    padding-top: 20px; /* Add consistent top spacing for all pages */
+}
+
+/* Error message styling */
+.error-message {
+    color: var(--primary-color);
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Page Title Styling */
+.page-title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding-top: 90px;
+    }
+}
+
+
